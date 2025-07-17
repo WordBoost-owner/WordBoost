@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WordBoost - Hangman</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <h1>WordBoost Hangman</h1>
+    <p>Welcome to the WordBoost Hangman game!</p>
+    <div id="login-screen">
+      <input type="text" id="username" placeholder="Enter your name" />
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="hangman-game" style="display:none;">
+      <img id="hangman-image" src="images/hangman0.png" alt="Hangman" />
+      <div id="word-display"></div>
+      <div id="letters"></div>
+      <p id="translation"></p>
+      <p id="example-sentence"></p>
+      <p id="xp"></p>
+      <button onclick="nextWord()" id="next-button">Next</button>
+      <button onclick="goHome()">Home</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
